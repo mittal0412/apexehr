@@ -1,0 +1,152 @@
+.sectionRoot {
+	background: #fff;
+	padding: 5.3rem 0 3.1rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.badge {
+	background: #f7fafd;
+	color: #71767e;
+	font-size: 0.96rem;
+	font-weight: 500;
+	border-radius: 2em;
+	padding: 4px 23px;
+	margin-bottom: 1.2rem;
+	letter-spacing: 0.07em;
+	span {
+		color: #2e3238;
+	}
+}
+
+.heading {
+	font-weight: 600;
+	color: #23253b;
+	font-size: 64px;
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+}
+.subheading {
+	color: #aeb0bb;
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 75px;
+	margin-top: 0;
+	line-height: 1.06;
+}
+
+.grid {
+	display: flex;
+	// grid-template-columns: 1fr 1fr; /* Two columns */
+	// grid-template-rows: auto auto;
+	// grid-template-areas:
+	// 	"leftTop rightTop"
+	// 	"leftBottom rightBig";
+	flex-flow: column;
+	gap: 1.25rem;
+	max-width: 860px;
+	margin: 0 auto;
+}
+.leftTop {
+	grid-area: leftTop;
+	/* Make higher if needed: */
+	min-height: 464px; /* adjust as needed */
+
+	.quoteText {
+		font-size: 24px;
+	}
+}
+.rightTop {
+	grid-area: rightTop;
+	min-height: 220px;
+}
+.leftBottom {
+	grid-area: leftBottom;
+	min-height: 220px;
+}
+.rightBig {
+	grid-area: rightBig;
+	background: #286ffe !important;
+	color: #fff !important;
+	box-shadow: 0 6px 36px #307bfa18, 0 0px 40px #286ffe14;
+	min-height: 464px; /* make higher to match sample image */
+	.quoteText {
+		font-size: 24px;
+	}
+}
+
+/* Responsive visibility */
+@media (max-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+			"leftTop"
+			"rightTop"
+			"leftBottom"
+			"rightBig";
+	}
+}
+.testimonial {
+	background: #fff;
+	border-radius: 1.5rem;
+	box-shadow: 0 3px 24px #dae0f633;
+	padding: 2.1rem 1.7rem 2.1rem 1.8rem;
+	// min-height: 170px;
+	max-width: 395px;
+	font-size: 1.12rem;
+	color: #171e34;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	border: 1px solid #d8d9dd;
+}
+
+.quoteMark {
+	font-size: 2.4rem;
+	font-weight: 600;
+	opacity: 1;
+
+	line-height: 1;
+	margin-bottom: 24px;
+}
+
+.quoteText {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	z-index: 1;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.attribution {
+	font-size: 0.95rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	margin-top: auto;
+	color: #353b4a;
+}
+.attributionSmall {
+	color: #b7bbca;
+	font-size: 0.93rem;
+	font-weight: 400;
+	margin-top: 2.5px;
+}
+.rightBig .attribution,
+.rightBig .attributionSmall {
+	color: #d5dfff;
+}
+.parentGrid {
+	display: flex;
+	gap: 18px;
+	position: relative;
+}
+.bgLines {
+	position: absolute;
+	top: -118px;
+	left: -29.65%;
+}

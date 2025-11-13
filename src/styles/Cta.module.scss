@@ -1,0 +1,133 @@
+.sectionRoot {
+	width: calc(100% - 80px);
+	display: flex;
+	align-items: center;
+
+	background: #276fff;
+	border-radius: 28px;
+	position: relative;
+	margin: 2rem auto 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 241px 150px;
+}
+
+.innerContent {
+	max-width: 570px;
+	color: #fff;
+}
+
+.heading {
+	font-size: 64px;
+	font-weight: normal;
+	line-height: 1.11;
+	color: #fff;
+	margin-bottom: 2.4rem;
+	letter-spacing: 0.01em;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: 1.45rem;
+}
+
+.heroBtn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.65em;
+	background: #fff;
+	color: #23253b;
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 0.74em 2.2em;
+	border-radius: 2em;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 3px 24px #2366ee16;
+	transition: background 0.15s;
+
+	&:hover {
+		background: #f5f7fd;
+	}
+}
+
+.secondaryLink {
+	color: #e8f0fd;
+	font-size: 0.99rem;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Faint geometric graphic lines */
+.bgAccent {
+	position: absolute;
+	left: 64px;
+	top: 19px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 0;
+}
+
+@media (max-width: 900px) {
+	.innerContent {
+		margin-left: 7vw;
+	}
+	.sectionRoot {
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.innerContent {
+		max-width: 95vw;
+		margin-left: 4vw;
+		margin-top: 3vw;
+	}
+	.heading {
+		font-size: 2rem;
+	}
+}
+.ctAction {
+	padding: 8px 12px 8px 8px;
+	border-radius: 30px;
+	background: #2e3238;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	.ctaIcon {
+		background-color: #ffffff;
+		padding: 15px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.secondaryCta {
+	background: transparent;
+	border-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	.ctaIcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

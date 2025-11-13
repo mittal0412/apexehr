@@ -1,0 +1,134 @@
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 3rem;
+	height: 80px;
+
+	@media (max-width: 700px) {
+		padding: 1rem 1.2rem;
+		height: 60px;
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.55rem;
+	font-weight: 700;
+	color: #fff;
+	gap: 0.5rem;
+
+	img {
+		height: 28px;
+		width: auto;
+		margin-right: 0.6rem;
+	}
+}
+
+.navLinks {
+	display: flex;
+	align-items: center;
+	gap: 1.9rem;
+
+	@media (max-width: 700px) {
+		display: none;
+	}
+}
+.ctas {
+	display: flex;
+	align-items: center;
+	gap: 1.9rem;
+
+	@media (max-width: 700px) {
+		display: none;
+	}
+}
+.link {
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 500;
+	opacity: 0.84;
+	&:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+}
+
+.cta {
+	padding: 8px 12px 8px 8px;
+	border-radius: 30px;
+	background: #2e3238;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	@media (max-width: 700px) {
+		display: none;
+	}
+	.ctaIcon {
+		background-color: #ffffff;
+		padding: 15px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.secondaryCta {
+	background: transparent;
+	border-color: transparent;
+	color: #ffffff;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	.ctaIcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.menuToggle {
+	display: none;
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+
+	@media (max-width: 700px) {
+		display: block;
+		z-index: 100;
+	}
+}
+
+.mobileMenu {
+	display: none;
+
+	@media (max-width: 700px) {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		right: 1.2rem;
+		background: rgba(26, 46, 91, 0.97);
+		border-radius: 1rem;
+		padding: 1.5rem 2rem;
+		gap: 1rem;
+		z-index: 99;
+		min-width: 150px;
+		box-shadow: 0 4px 36px rgba(0, 0, 0, 0.12);
+	}
+}

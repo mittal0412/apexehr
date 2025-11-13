@@ -1,0 +1,165 @@
+.sectionRoot {
+	padding: 5rem 0 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+}
+
+.badge {
+	background: #ebf1fd;
+	color: #3571ff;
+	font-size: 14px;
+	border-radius: 100px;
+	padding: 12px 10px;
+	margin-bottom: 12px;
+	text-align: center;
+	width: fit-content;
+}
+
+.heading {
+	text-align: center;
+	font-size: 64px;
+	font-weight: 600;
+	color: #23253b;
+	font-weight: normal;
+}
+.subheading {
+	font-size: 64px;
+	color: #babfc8;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 75px;
+	line-height: 1.07;
+}
+
+.pricingGrid {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 1170px;
+	position: relative;
+	@media (max-width: 1000px) {
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: center;
+	}
+	.bgLines {
+		position: absolute;
+		top: -87px;
+		left: -259px;
+		@media screen and (max-width: 1299px) {
+			display: none;
+		}
+	}
+}
+
+.card {
+	background: #fff;
+	border-radius: 1.2rem;
+	box-shadow: 0 4px 36px #dde5fa23;
+	padding: 40px;
+	border: 2px solid #f2f3f7;
+	min-width: 290px;
+	max-width: 390px;
+	flex: 1 1 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	@media screen and (min-width: 1300px) {
+		min-width: 376px;
+	}
+}
+
+.cardTitle {
+	font-size: 1.12rem;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+	margin-bottom: 0.7rem;
+}
+
+.priceRow {
+	display: flex;
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 0.5rem;
+	align-items: flex-end;
+
+	.per {
+		font-size: 18px;
+		color: #959fb3;
+		font-weight: 400;
+		margin-left: 0.18em;
+	}
+}
+
+.cardSummary {
+	font-size: 18px;
+	font-weight: normal;
+	color: #7f8592;
+
+	margin-top: 16px;
+	min-height: 2em;
+}
+
+.divider {
+	width: 100%;
+	border-bottom: 1.2px dashed #e3e7f4;
+	margin: 32px 0;
+}
+
+.cardList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 46px;
+}
+.cardList li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 0.65em;
+	color: #383b45;
+
+	&::before {
+		content: url("/list-item.svg");
+		font-size: 1.14em;
+		color: #23273b;
+		margin-right: 0;
+	}
+}
+
+.getStartedBtn {
+	width: 100%;
+	padding: 0.82em 0;
+	font-size: 1.03rem;
+	font-weight: 600;
+	color: #23253b;
+	background: #fff;
+	border: 2px solid #e8eafd;
+	border-radius: 2em;
+	cursor: pointer;
+	margin-top: auto;
+	transition: color 0.15s, background 0.15s;
+
+	&:hover {
+		background: #f5f8ff;
+		color: #2a65e0;
+	}
+}
+
+/* Highlight central button */
+.card:nth-child(2) .getStartedBtn {
+	background: #23253b;
+	color: #fff;
+	border-color: #23253b;
+}
+.card:nth-child(2) .getStartedBtn:hover {
+	background: #395fdb;
+	color: #fff;
+}

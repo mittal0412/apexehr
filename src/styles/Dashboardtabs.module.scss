@@ -1,0 +1,90 @@
+.sectionRoot {
+	display: flex;
+	min-height: 650px;
+	background: #fafbfc;
+	width: 100%;
+	position: relative;
+}
+
+.sidebarRoot {
+	position: relative;
+	width: 270px;
+	min-width: 170px;
+	padding: 3rem 0;
+	background: transparent;
+}
+
+.verticalLine {
+	position: absolute;
+	left: 36px;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #eceef4;
+	border-radius: 1.5px;
+	z-index: 1;
+}
+
+.activeBar {
+	position: absolute;
+	left: 36px;
+	width: 3px;
+	height: 38px;
+	background: #2990ea;
+	border-radius: 1.5px;
+	z-index: 2;
+	transition: top 0.3s cubic-bezier(0.7, 0.33, 0.31, 0.94);
+}
+
+.list {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	margin-left: 62px;
+}
+
+.item {
+	height: 38px;
+	display: flex;
+	align-items: center;
+	font-size: 1.12rem;
+	color: #99a4b7;
+	padding: 0 1rem;
+	background: none;
+	border: none;
+	outline: none;
+	border-radius: 7px 0 0 7px;
+	cursor: pointer;
+	transition: color 0.22s, background 0.18s;
+	margin-bottom: 3px;
+
+	&:hover {
+		color: #2990ea;
+		background: #f5f8ff;
+	}
+}
+
+.active {
+	color: #181b23;
+	background: #f6f8fa;
+	font-weight: 600;
+}
+
+.contentArea {
+	flex: 1 1 0px;
+	padding: 3rem 3rem 3.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+.sectionPanel {
+	background: #fff;
+	border-radius: 24px;
+	box-shadow: 0 6px 36px rgba(73, 182, 238, 0.1);
+	padding: 2.2rem 2rem;
+	margin-bottom: 1.8rem;
+}

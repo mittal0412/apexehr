@@ -1,0 +1,283 @@
+.sectionRoot {
+	background: #fff;
+	padding: 5rem 0 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.badge {
+	background: #ebf1fd;
+	color: #3571ff;
+	font-size: 14px;
+	border-radius: 100px;
+	padding: 12px 10px;
+	margin-bottom: 12px;
+	text-align: center;
+	width: fit-content;
+}
+
+.heading {
+	color: #2e3238;
+	font-size: 64px;
+	line-height: 1.1;
+	margin-bottom: 75px;
+	text-align: center;
+	font-weight: normal;
+	span {
+		color: #a9acb2;
+
+		display: block;
+	}
+}
+.subheading {
+	color: #b0b6c7;
+	font-weight: 400;
+}
+
+.tetrisGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 120px);
+	grid-gap: 1.1rem;
+	width: 98vw;
+	max-width: 1200px;
+	margin-top: 3rem;
+
+	@media (max-width: 1100px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(9, 120px);
+	}
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: none;
+	}
+}
+
+.card {
+	background: #f6f8fc;
+	border-radius: 1.2rem;
+	box-shadow: 0 2px 24px rgba(54, 152, 235, 0.1);
+	font-weight: 600;
+	color: #17254b;
+	font-size: 1.05rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 1.15rem 1rem 1rem 1.2rem;
+	overflow: hidden;
+	min-height: 470px;
+}
+
+.imgCard {
+	background: #fff;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	img {
+		border-radius: 1.1rem 1.1rem 0 0;
+		width: 100%;
+		height: 88px;
+		object-fit: cover;
+		margin-bottom: 0.65rem;
+	}
+	.label {
+		padding: 0 1rem 1rem 1rem;
+		font-size: 1.03rem;
+		font-weight: 600;
+	}
+}
+
+.blueCard {
+	background: linear-gradient(105deg, #2564e4 40%, #257ce8 100%);
+	color: #fff;
+}
+
+.stat {
+	color: #7a9fff;
+	font-size: 0.97rem;
+	font-weight: 400;
+	margin-top: 0.35em;
+}
+
+// New component styles can go here
+
+.featuresSection {
+	background: #fff;
+	padding: 5rem 0 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.featuresGrid {
+		.dFlexRow {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+			.cardCol {
+				display: flex;
+				flex-direction: column;
+				@media screen and (min-width: 1300px) {
+					width: calc(20% - 50px);
+				}
+
+				gap: 20px;
+				&:nth-child(odd) {
+					margin-top: 193px;
+				}
+				.card {
+					position: relative;
+					width: 100%;
+					max-width: 350px;
+					border-radius: 24px;
+					overflow: hidden;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+					background-color: rgb(234, 240, 253);
+					padding: 0;
+					min-width: 200px;
+					min-height: 390px;
+					max-height: 390px;
+					.cardTitle {
+						position: absolute;
+						top: 16px;
+						left: 16px;
+						color: #fff;
+						font-size: 26px;
+						font-weight: normal;
+						line-height: 1.2;
+						z-index: 2;
+					}
+					.cardImage {
+						display: block;
+						width: 100%;
+						height: auto;
+						object-fit: fill;
+						min-height: 240px;
+						overflow: hidden;
+					}
+					.otherElements {
+					}
+					&.card1 {
+						.cardTitle {
+							color: #2e3238;
+						}
+						.otherElements {
+							position: absolute;
+							top: 106px;
+							left: -77px;
+						}
+						.textCount {
+							position: relative; /* ensure stacking context */
+							top: 154px;
+							left: 115px;
+
+							span {
+								position: relative;
+								z-index: 2; /* text on top */
+								font-size: 54px;
+								background: radial-gradient(circle, #a2bdfe 0%, #a2bdfe 100%);
+								-webkit-background-clip: text;
+								-webkit-text-fill-color: transparent;
+								top: 18px;
+								left: -8px;
+							}
+
+							&:before {
+								content: "";
+								width: 219px;
+								height: 219px;
+								background-color: #ffffff;
+								border-radius: 100%;
+								display: inline-block;
+								position: absolute;
+								z-index: 0; /* circle behind */
+								top: -40px;
+								left: -80px;
+							}
+						}
+
+						.rotateImage {
+							transform: rotate(15deg);
+							animation: rotate360 3s linear infinite;
+						}
+					}
+					&.card2 {
+						min-height: auto;
+					}
+					&.card5 {
+						min-height: auto;
+						.cardTitle {
+							color: #2e3238;
+						}
+						.cardImage {
+							min-height: auto;
+						}
+					}
+					&.card6 {
+						min-height: auto;
+						.cardTitle {
+							color: #2e3238;
+						}
+						.cardImage {
+							min-height: auto;
+						}
+					}
+					&.card8 {
+						.cardTitle {
+							color: #2e3238;
+						}
+						.cardImage {
+							min-height: auto;
+						}
+					}
+					&.card10 {
+						background-color: #3571ff;
+						min-height: auto;
+						.otherElements {
+							position: relative;
+							top: 110px;
+							left: 53px;
+							img {
+								animation: rotate360 3s linear infinite;
+							}
+						}
+					}
+					&.card11 {
+						.cardTitle {
+							color: #2e3238;
+						}
+						.otherElements {
+							position: relative;
+							top: 127px;
+						}
+					}
+					&.card13 {
+						min-height: auto;
+						.cardTitle {
+							color: #2e3238;
+						}
+						.otherElements {
+							position: relative;
+						}
+					}
+					&.card4 {
+						background-color: #3571ff;
+						min-height: auto;
+						.otherElements {
+							position: relative;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes rotate360 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
