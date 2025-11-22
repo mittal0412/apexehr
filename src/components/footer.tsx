@@ -7,7 +7,13 @@ export default function Footer() {
 			<div className={styles.logoBlurSection}>
 				<div className={styles.logoBlur}>ApexEHR</div>
 				<div className={styles.blurImage}>
-					<Image src="/footer-blur.png" alt="ApexEHR logo blur" width={953} height={318} />
+					<Image
+						style={{ maxWidth: "100%", height: "auto" }}
+						src="/footer-blur.png"
+						alt="ApexEHR logo blur"
+						width={953}
+						height={318}
+					/>
 				</div>
 			</div>
 			<div className={styles.divider} />
@@ -17,15 +23,15 @@ export default function Footer() {
 						Experience the Future of Healthcare with ApexEHR
 					</div>
 					<div className={styles.ctaRow}>
-						<button className={styles.ctAction}>
-							<span className={styles.ctaIcon}>
+						<button className={"primary-action"}>
+							<span className={"cta-icon"}>
 								<Image src="/arrow-right.png" alt="ApexEHR CTA" width={9} height={9} />
 							</span>
 							<span>Get started</span>
 						</button>
 
-						<button className={styles.secondaryCta}>
-							<span className={styles.ctaIcon}>
+						<button className={"secondary-action dark"}>
+							<span className={"cta-icon"}>
 								<Image src="/demo-icon-dark.svg" alt="ApexEHR CTA" width={9} height={9} />
 							</span>
 							Request a demo

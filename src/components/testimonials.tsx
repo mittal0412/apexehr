@@ -2,12 +2,15 @@ import styles from "../styles/Testimonials.module.scss";
 
 export default function TestimonialsSection() {
 	return (
-		<section className={styles.sectionRoot}>
+		<section className={styles.sectionRoot + " container"}>
 			<div className={styles.badge}>
 				<span>1500+</span> active users
 			</div>
-			<div className={styles.heading}>Trusted by Healthcare</div>
-			<div className={styles.subheading}>Providers Worldwide</div>
+			<div className={"main-title"}>
+				Trusted by Healthcare <br />
+				<span>Providers Worldwide</span>
+			</div>
+
 			<div className={styles.parentGrid}>
 				<img src="/testimonial-line.svg" alt="background lines" className={styles.bgLines} />
 

@@ -13,7 +13,7 @@ export default function ProvidersSection() {
 		});
 	}, []);
 	return (
-		<section className={styles.providers}>
+		<section className={styles.providers + " container"}>
 			{/* Floating icon bubbles */}
 
 			<div data-aos="zoom-in" className={`${styles.iconBubble} ${styles.icon1}`}>
@@ -34,11 +34,11 @@ export default function ProvidersSection() {
 			<div data-aos="zoom-in" className={`${styles.iconBubble} ${styles.icon6}`}>
 				<img src="/icon-6.svg" alt="note icon" />
 			</div>
-			<div className={styles.badge}>ABOUT APEX</div>
-			<h2 className={styles.heading}>
+			<div className={"section-badge"}>ABOUT APEX</div>
+			<h2 className={"main-title"}>
 				Empowering Today’s <span>Healthcare Providers</span>
 			</h2>
-			<div className={styles.subheading}>
+			<div className={"sub-title"}>
 				ApexEHR is an intuitive, all-in-one solution that streamlines healthcare operations, improves patient
 				outcomes, and ensures data security—all while integrating seamlessly with existing systems.
 			</div>

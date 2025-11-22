@@ -10,6 +10,9 @@
 	box-sizing: border-box;
 	overflow: hidden;
 	padding: 241px 150px;
+	@media screen and (max-width: 768px) {
+		padding: 30px;
+	}
 }
 
 .innerContent {
@@ -24,12 +27,18 @@
 	color: #fff;
 	margin-bottom: 2.4rem;
 	letter-spacing: 0.01em;
+	@media screen and (max-width: 768px) {
+		font-size: 34px;
+	}
 }
 
 .actions {
 	display: flex;
 	align-items: center;
 	gap: 1.45rem;
+	@media screen and (max-width: 768px) {
+		flex-wrap: wrap;
+	}
 }
 
 .heroBtn {
@@ -76,23 +85,23 @@
 }
 
 @media (max-width: 900px) {
-	.innerContent {
-		margin-left: 7vw;
-	}
-	.sectionRoot {
-		border-radius: 0;
-	}
+	// .innerContent {
+	// 	margin-left: 7vw;
+	// }
+	// .sectionRoot {
+	// 	border-radius: 0;
+	// }
 }
 
 @media (max-width: 600px) {
-	.innerContent {
-		max-width: 95vw;
-		margin-left: 4vw;
-		margin-top: 3vw;
-	}
-	.heading {
-		font-size: 2rem;
-	}
+	// .innerContent {
+	// 	max-width: 95vw;
+	// 	margin-left: 4vw;
+	// 	margin-top: 3vw;
+	// }
+	// .heading {
+	// 	font-size: 2rem;
+	// }
 }
 .ctAction {
 	padding: 8px 12px 8px 8px;

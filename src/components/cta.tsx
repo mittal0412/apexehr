@@ -19,15 +19,15 @@ export default function HeroBlueSection() {
 					with ApexEHR
 				</div>
 				<div className={styles.actions}>
-					<button className={styles.ctAction}>
-						<span className={styles.ctaIcon}>
+					<button className={"primary-action"}>
+						<span className={"cta-icon"}>
 							<Image src="/arrow-right.png" alt="ApexEHR CTA" width={9} height={9} />
 						</span>
 						<span>Get started</span>
 					</button>
 
-					<button className={styles.secondaryCta}>
-						<span className={styles.ctaIcon}>
+					<button className={"secondary-action"}>
+						<span className={"cta-icon"}>
 							<Image src="/demo-icon.svg" alt="ApexEHR CTA" width={9} height={9} />
 						</span>
 						Request a demo

@@ -1,5 +1,5 @@
 .sectionRoot {
-	padding: 5rem 0 3rem 0;
+	padding: 100px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,10 +41,12 @@
 	width: 100%;
 	max-width: 1170px;
 	position: relative;
+	margin-top: 85px;
 	@media (max-width: 1000px) {
 		flex-direction: column;
 		gap: 1.5rem;
 		align-items: center;
+		margin-top: 20px;
 	}
 	.bgLines {
 		position: absolute;

@@ -31,10 +31,12 @@ const plans = [
 
 export default function PricingSection() {
 	return (
-		<section className={styles.sectionRoot}>
-			<div className={styles.badge}>PRICING</div>
-			<div className={styles.heading}>Affordable Pricing</div>
-			<div className={styles.subheading}>for Every Practice</div>
+		<section className={styles.sectionRoot + " container"}>
+			<div className={"section-badge"}>PRICING</div>
+			<div className={"main-title"}>
+				Affordable Pricing <br /> <span>for Every Practice</span>
+			</div>
+
 			<div className={styles.pricingGrid}>
 				<img src="/bg-lines.svg" alt="background lines" className={styles.bgLines} />
 				{plans.map((plan, idx) => (

@@ -11,6 +11,7 @@ import PricingSection from "@/components/pricing";
 import HeroBlueSection from "@/components/cta";
 import Footer from "@/components/footer";
 import Features from "@/components/features";
+import "./../styles/common.scss";
 
 export default function Home() {
 	return (
@@ -21,10 +22,8 @@ export default function Home() {
 				<div className={styles.overlay}></div>
 				<div className={styles.content}>
 					<h1 className={styles.title}>
-						Revolutionize
-						<br />
-						Healthcare
-						<br />
+						Revolutionize <br />
+						Healthcare <br />
 						with ApexEHR
 					</h1>
 					<div className={styles.subtitle}>
@@ -33,14 +32,14 @@ export default function Home() {
 						Tailored for Healthcare Providers.
 					</div>
 					<div className={styles.ctas}>
-						<button className={styles.ctAction}>
-							<span className={styles.ctaIcon}>
+						<button className={"primary-action"}>
+							<span className={"cta-icon"}>
 								<Image src="/arrow-right.png" alt="ApexEHR CTA" width={9} height={9} />
 							</span>
 							<span>Get started</span>
 						</button>
-						<button className={styles.secondaryCta}>
-							<span className={styles.ctaIcon}>
+						<button className={"secondary-action"}>
+							<span className={"cta-icon"}>
 								<Image src="/demo-icon.svg" alt="ApexEHR CTA" width={9} height={9} />
 							</span>
 							Request a demo
@@ -49,8 +48,7 @@ export default function Home() {
 				</div>
 			</section>
 			<ProvidersSection />
-			{/* <DashboardTabs /> */}
-			{/* <FeaturesGridSection /> */}
+			<DashboardTabs />
 			<Features />
 			<SpecialtySolutionsSection />
 			<SecuritySection />

@@ -14,9 +14,9 @@ const Features = () => {
 	}, []);
 	return (
 		<>
-			<section className={styles.featuresSection}>
-				<div className={styles.badge}>FOR PROVIDERS</div>
-				<div className={styles.heading}>
+			<section className={styles.featuresSection + " container"}>
+				<div className={"section-badge"}>FOR PROVIDERS</div>
+				<div className={"main-title"}>
 					Discover Powerful
 					<br /> Features Tailored
 					<br />

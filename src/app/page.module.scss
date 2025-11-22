@@ -1,12 +1,15 @@
 .hero {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+
 	min-height: 400px;
 	display: flex;
 	align-items: stretch;
 	background: #e6ecf6;
 	max-height: 1300px;
+	@media screen and (min-height: 625px) {
+		height: 100vh;
+	}
 	.backgroundImage {
 		position: absolute;
 		inset: 0;
@@ -19,7 +22,7 @@
 	.overlay {
 		position: absolute;
 		inset: 0;
-		background: rgba(26, 46, 91, 0.47); // subtle bluish overlay
+		background: rgba(26, 46, 91, 0.2); // subtle bluish overlay
 		z-index: 2;
 	}
 
@@ -34,11 +37,11 @@
 		height: 100%;
 		width: 100%;
 		max-width: 45rem;
-		padding: 2rem 2.5rem;
+		padding: 140px 40px 40px;
 		gap: 48px;
 		@media (max-width: 700px) {
-			padding: 1.2rem 1rem;
 			max-width: 100%;
+			gap: 20px;
 		}
 	}
 
@@ -48,7 +51,11 @@
 		line-height: 95%;
 		color: #ffffff;
 		@media (max-width: 700px) {
-			font-size: 2rem;
+			font-size: 36px;
+			line-height: 46px;
+			br {
+				display: none;
+			}
 		}
 	}
 
@@ -56,6 +63,12 @@
 		font-size: 24px;
 		line-height: 1.7;
 		color: #ffffff;
+		@media (max-width: 700px) {
+			br {
+				display: none;
+			}
+			line-height: 1.5;
+		}
 	}
 
 	.ctaButton {
@@ -139,4 +152,5 @@
 	display: flex;
 	align-items: center;
 	gap: 16px;
+	flex-wrap: wrap;
 }

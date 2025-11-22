@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function SpecialtySolutionsSection() {
 	return (
-		<section className={styles.sectionRoot}>
-			<div className={styles.badge}>FOR PROVIDERS</div>
-			<div className={styles.heading}>
+		<section className={styles.sectionRoot + " container"}>
+			<div className={"section-badge"}>FOR PROVIDERS</div>
+			<div className={"main-title"}>
 				Tailored Solutions for <span className="light">Every Specialty</span>
 			</div>
-			<div className={styles.desc}>
+			<div className={"sub-title"}>
 				ApexEHR adapts to the specific needs of various
 				<br /> specialties, ensuring every practice benefits from <br /> personalized tools and workflows.
 			</div>
@@ -16,11 +16,11 @@ export default function SpecialtySolutionsSection() {
 				{/* Specialties as image */}
 				<div className={styles.specialtyImagePanel}>
 					<Image
-						src="/images/specialties.jpg"
+						style={{ maxWidth: "80%", height: "auto", margin: "auto" }}
+						src="/tailored-solution.png"
 						alt="Specialties"
-						width={360}
-						height={410}
-						className={styles.specialtyImg}
+						width={1142}
+						height={624}
 						priority
 					/>
 				</div>

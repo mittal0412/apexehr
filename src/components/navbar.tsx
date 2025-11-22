@@ -28,14 +28,14 @@ export default function Navbar() {
 				</a>
 			</div>
 			<div className={styles.ctas}>
-				<button className={styles.secondaryCta}>
-					<span className={styles.ctaIcon}>
+				<button className={"secondary-action"}>
+					<span className={"cta-icon"}>
 						<Image src="/demo-icon.svg" alt="ApexEHR CTA" width={9} height={9} />
 					</span>
 					Request a demo
 				</button>
-				<button className={styles.cta}>
-					<span className={styles.ctaIcon}>
+				<button className={"primary-action"}>
+					<span className={"cta-icon"}>
 						<Image src="/arrow-right.png" alt="ApexEHR CTA" width={9} height={9} />
 					</span>
 					<span>Get started</span>
@@ -55,8 +55,14 @@ export default function Navbar() {
 					<a href="#contact" className={styles.link} onClick={() => setMenuOpen(false)}>
 						Contact
 					</a>
+					<button className={"secondary-action"} onClick={() => setMenuOpen(false)}>
+						<span className={"cta-icon"}>
+							<Image src="/demo-icon.svg" alt="ApexEHR CTA" width={9} height={9} />
+						</span>
+						Request a demo
+					</button>
 					<button
-						className={styles.cta}
+						className={"primary-action"}
 						style={{ display: "block", width: "100%" }}
 						onClick={() => setMenuOpen(false)}
 					>
